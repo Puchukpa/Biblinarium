@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicBackground"
+    tools:context=".mvvm.views.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_authorization"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.pages.account.AccountFragment">
+
+        <!-- Header -->
+        <View
+            android:id="@+id/view_authorization_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/fragmentBackground" />
+        <TextView
+            android:id="@+id/textView_authorization_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="center_vertical"
+            android:text="@string/title_authorization"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <!-- Main panel -->
+        <RelativeLayout
+            android:id="@+id/layout_authorization_mainPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_authorization_header"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/fragmentBackgroundLight">
+
+            <!-- Enter login -->
+            <FrameLayout
+                android:id="@+id/layout_authorization_enterLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_authorization_enterLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_login"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <!-- Enter password -->
+            <FrameLayout
+                android:id="@+id/layout_authorization_enterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/layout_authorization_enterLogin">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_authorization_enterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_password"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <!-- Login button -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/layout_authorization_enterPassword"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/fragmentBackground" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_authorization_enterPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:background="@color/button"
+                android:text="@string/buttons_logIn"
+                android:textColor="@color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

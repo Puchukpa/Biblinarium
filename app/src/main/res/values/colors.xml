@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="basicBackground">#ffecc7</color>
+    <color name="fragmentBackgroundLight">#EDCA86</color>
+    <color name="fragmentBackground">#C59D51</color>
+    <color name="grayBackgroundLight">#e8e8e8</color>
+    <color name="grayBackground">#d9d9d9</color>
+    <color name="grayForeground">#9C9C9C</color>
+    <color name="button">#90DFDF</color>
+</resources>

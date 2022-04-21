@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@color/grayBackgroundLight"
+    tools:context=".ui.pages.book.BookTextSettingsFragment">
+
+    <TextView
+        android:id="@+id/textView_fragment_textSettings_subtitleTextSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_textSettings"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/rubik"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_fragment_textSettings_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_fragment_textSettings_subtitleTextSettings"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/hint_font"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+        <Spinner
+            android:id="@+id/spinner_fragment_textSettings_fontSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:isScrollContainer="true"
+            android:popupBackground="@color/grayBackground" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_fragment_textSettings_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_fragment_textSettings_font"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/hint_textSize"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spinner_fragment_textSettings_sizeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:isScrollContainer="true"
+            android:popupBackground="@color/grayBackground"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_fragment_textSettings_size"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/hint_darkTheme"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+        <ToggleButton
+            android:id="@+id/spinner_fragment_textSettings_nightToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

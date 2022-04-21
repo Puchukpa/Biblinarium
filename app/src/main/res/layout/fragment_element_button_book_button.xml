@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="15dp"
+    android:background="@color/grayBackground"
+    tools:context=".ui.elements.buttons.BookButtonFragment">
+
+    <ImageView
+        android:id="@+id/imageView_element_buttons_bookImage"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/empty_image"
+        android:background="@color/grayForeground"/>
+
+    <LinearLayout
+        android:id="@+id/layout_element_buttons_bookText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/imageView_element_buttons_bookImage"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_element_buttons_bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bookName"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/rubik"/>
+
+        <TextView
+            android:id="@+id/textView_element_buttons_bookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bookAuthor"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/rubik"/>
+
+        <TextView
+            android:id="@+id/textView_element_buttons_bookSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bookSize"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/rubik"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

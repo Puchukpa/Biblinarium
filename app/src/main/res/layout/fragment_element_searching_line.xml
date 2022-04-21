@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_element_searchingLine"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/fragmentBackground"
+    tools:context=".ui.elements.SearchingLineElement">
+
+    <RelativeLayout
+        android:id="@+id/layout_searchingLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/button_searchingFilter">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText_searchingLine"
+            android:layout_alignTop="@+id/editText_searchingLine"
+            android:layout_alignEnd="@+id/editText_searchingLine"
+            android:layout_alignBottom="@+id/editText_searchingLine"
+            android:background="@drawable/elem_panel_gray_square" />
+
+        <EditText
+            android:id="@+id/editText_searchingLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/rubik"
+            android:hint="@string/hint_searchingLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grayForeground" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_searchingFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_filter"
+        android:scaleX="0.6"
+        android:scaleY="0.6"/>
+
+</RelativeLayout>

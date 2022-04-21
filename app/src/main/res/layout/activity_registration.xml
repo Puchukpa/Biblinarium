@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicBackground"
+    tools:context=".activities.RegistrationActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.pages.account.AccountFragment">
+
+        <!-- Header -->
+        <View
+            android:id="@+id/view_registration_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/fragmentBackground" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="center_vertical"
+            android:text="@string/title_registration"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <!-- Main panel -->
+        <RelativeLayout
+            android:id="@+id/layout_registration_mainPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_registration_header"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/fragmentBackgroundLight">
+
+            <!-- Set login -->
+            <FrameLayout
+                android:id="@+id/layout_registration_setLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_registration_setLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_setLogin"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <!-- Set password -->
+            <FrameLayout
+                android:id="@+id/layout_registration_setPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/layout_registration_setLogin">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_registration_setPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_setPassword"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <!-- Repeat password -->
+            <FrameLayout
+                android:id="@+id/layout_registration_repeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/layout_registration_setPassword">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_registration_repeatPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_repeatPassword"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <!-- Set nickname -->
+            <FrameLayout
+                android:id="@+id/layout_registration_setNickname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/layout_registration_repeatPassword"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fragmentBackground" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/grayBackground" />
+
+                <EditText
+                    android:id="@+id/editText_registration_setNickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:hint="@string/hint_setNickname"
+                    android:textColorHint="@color/grayForeground" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/view_registration_setProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/layout_registration_setNickname"
+                android:layout_gravity="center"
+                android:background="@color/fragmentBackground" />
+
+            <RelativeLayout
+                android:id="@+id/layout_registration_setProfilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/layout_registration_setNickname"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@color/grayBackground"
+                tools:context=".ui.elements.buttons.BookButtonFragment">
+
+                <ImageButton
+                    android:id="@+id/imageButton_registration_setProfilePicture"
+                    android:layout_width="65dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/grayForeground"
+                    android:src="@drawable/empty_image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageButton_registration_setProfilePicture"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/hint_setProfilePicture"
+                    android:textAlignment="center"
+                    android:textColor="@color/grayForeground"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view_registration_setProfilePicture"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/fragmentBackground" />
+
+            <Button
+                android:id="@+id/button_registration_doneRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_registration_setProfilePicture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:background="@color/button"
+                android:text="@string/buttons_doneRegistration"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

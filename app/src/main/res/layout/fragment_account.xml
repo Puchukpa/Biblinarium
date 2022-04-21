@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.account.AccountFragment">
+
+    <!-- Header -->
+    <View
+        android:id="@+id/view_account_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/fragmentBackground" />
+    <TextView
+        android:id="@+id/textView_account_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/rubik"
+        android:gravity="center_vertical"
+        android:text="@string/title_account"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <!-- Main panel -->
+    <RelativeLayout
+        android:id="@+id/layout_forum_mainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_account_header"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/fragmentBackgroundLight">
+
+    </RelativeLayout>
+</RelativeLayout>

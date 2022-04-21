@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.forum.ForumMyClubsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_fragment_forum_myClubs_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_fragment_forum_myClubs_myClubs"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/fragmentBackgroundLight"
+            android:text="@string/button_myBooks"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik"
+            android:textSize="18sp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/button_fragment_forum_myClubs_findClubs"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/basicBackground"
+            android:text="@string/button_findBooks"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_fragment_forum_myClubs_buttons"
+        android:background="@color/fragmentBackgroundLight"/>
+
+    <Button
+        android:id="@+id/button_fragment_forum_createClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_fragment_forum_myClubs_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="220dp"
+        android:background="@color/button"
+        android:text="@string/buttons_createClub"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_fragment_forum_createClub"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <LinearLayout
+            android:id="@+id/layout_fragment_books_findBooks_findBooksButtons"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

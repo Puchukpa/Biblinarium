@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.exchange.ExchangeAnnouncementPageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayBackgroundLight">
+
+        <ImageView
+            android:id="@+id/imageView_fragment_exchange_announcementImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty_image"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_fragment_exchange_announcementPage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_arrow_left" />
+
+        <TextView
+            android:id="@+id/textView_fragment_exchange_announcementName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageView_fragment_exchange_announcementImage"
+            android:text="@string/announcementName"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/button_fragment_exchange_announcementPage_respond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_fragment_exchange_announcementName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/button"
+            android:text="@string/button_respond"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_fragment_exchange_announcementData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@+id/button_fragment_exchange_announcementPage_respond"
+            android:background="@color/grayBackground">
+
+            <TextView
+                android:id="@+id/textView_fragment_exchange_announcementPage_announcementTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/announcementName"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_fragment_exchange_announcementPage_announcementAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/textView_fragment_exchange_announcementPage_announcementTheme"
+                android:text="@string/announcementAddress"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_fragment_exchange_announcementPage_announcementDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/textView_fragment_exchange_announcementPage_announcementAddress"
+                android:text="@string/hint_announcementDescription"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_fragment_exchange_announcementPage_photos"
+            android:orientation="vertical"
+            android:layout_below="@+id/layout_fragment_exchange_announcementData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

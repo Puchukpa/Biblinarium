@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_exchange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.exchange.ExchangeFragment">
+
+
+    <!-- Header -->
+    <View
+        android:id="@+id/view_exchange_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/fragmentBackground" />
+    <TextView
+        android:id="@+id/textView_exchancge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/rubik"
+        android:gravity="center_vertical"
+        android:text="@string/title_exchange"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <!-- Searching panel -->
+    <fragment
+        android:id="@+id/fragment_searchingPanel"
+        android:name="com.project.biblinarium.ui.elements.SearchingLineElement"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/view_exchange_header"
+        android:layout_marginTop="15dp" />
+
+
+    <!-- Main panel -->
+    <RelativeLayout
+        android:id="@+id/layout_exchange_mainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_searchingPanel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="@color/fragmentBackgroundLight">
+
+    </RelativeLayout>
+</RelativeLayout>

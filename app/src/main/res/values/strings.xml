@@ -1,0 +1,86 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Библинариум</string>
+
+    <!-- Titles -->
+    <string name="title_books">Книги</string>
+    <string name="title_forum">Форум</string>
+    <string name="title_exchange">Обмен книгами</string>
+    <string name="title_reserve">Бронирование книги</string>
+    <string name="title_account">Аккаунт</string>
+    <string name="subtitle_loadScreen">Приложение для книголюбов</string>
+    <string name="title_registration">Регистрация</string>
+    <string name="title_authorization">Авторизация</string>
+    <string name="subtitle_textSettings">Настройки текста</string>
+    <string name="subtitle_createClub">Создание клуба</string>
+    <string name="subtitle_createDiscussion">Создание обсуждения</string>
+    <string name="subtitle_createAnnouncement">Создание объявления</string>
+    <string name="subtitle_findAnnouncements">Поиск объявлений</string>
+    <string name="subtitle_findLibraries">Поиск библиотеки</string>
+
+
+    <!-- Buttons -->
+    <string name="button_books">Книги</string>
+    <string name="button_forum">Форум</string>
+    <string name="button_exchange">Обмен</string>
+    <string name="button_reserve">Бронь</string>
+    <string name="button_account">Аккаунт</string>
+    <string name="button_myBooks">Мои книги</string>
+    <string name="button_findBooks">Поиск книг</string>
+    <string name="button_myClubs">Мои клубы</string>
+    <string name="button_findClubs">Поиск клубов</string>
+    <string name="buttons_createClub">Создать клуб</string>
+    <string name="buttons_createAnnouncement">Создать объявление</string>
+    <string name="buttons_doneRegistration">Зарегистрироваться</string>
+    <string name="buttons_logIn">Войти</string>
+    <string name="buttons_doneCreateClub">Создать клуб</string>
+    <string name="buttons_doneCreateDiscussion">Создать обсуждение</string>
+    <string name="buttons_doneCreateAnnouncement">Создать объявление</string>
+    <string name="buttons_reserveBooks">Забронировать</string>
+    <string name="button_respond">Отозваться</string>
+
+    <!-- Hints -->
+    <string name="hint_searchingLine">Поиск</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_setLogin">Придумайте логин</string>
+    <string name="hint_setPassword">Придумайте пароль</string>
+    <string name="hint_repeatPassword">Повторите пароль</string>
+    <string name="hint_setNickname">Придумайте никнейм</string>
+    <string name="hint_setProfilePicture">Добавьте аватарку</string>
+    <string name="hint_font">Шрифт</string>
+    <string name="hint_textSize">Размер шрифта</string>
+    <string name="hint_darkTheme">Ночной режим</string>
+    <string name="hint_clubName">Нзавание клуба</string>
+    <string name="hint_clubTheme">Тема</string>
+    <string name="hint_clubDescription">Описание клуба</string>
+    <string name="hint_discussionName">Нзавание обсуждения</string>
+    <string name="hint_discussionTags">Тэги</string>
+    <string name="hint_discussionMessage">Сообщение</string>
+    <string name="hint_announcementName">Нзавание объявления</string>
+    <string name="hint_announcementTags">Тэги</string>
+    <string name="hint_announcementAddress">Адрес</string>
+    <string name="hint_announcementDescription">Описание</string>
+
+    <!-- Plugs -->
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="bookName">Название книги</string>
+    <string name="bookAuthor">Автор</string>
+    <string name="bookSize">Страницы</string>
+    <string name="clubName">Название клуба</string>
+    <string name="clubTheme">Тема</string>
+    <string name="clubSize">Кол-во участников</string>
+    <string name="announcementName">Тема объявления</string>
+    <string name="announcementAddress">Адрес объявления</string>
+    <string name="userNickname">Никнейм пользователя</string>
+    <string name="userTag">Тэг пользователя</string>
+    <string name="plug_bookName">Название книги</string>
+    <string name="plug_libraryName">Название библиотеки</string>
+    <string name="plug_libraryAddress">Адрес библиотеки</string>
+    <string name="plug_booksCount">Х книг выбрано</string>
+    <string name="plug_bookDescription">Описание книги</string>
+    <string name="plug_replies">ХХ ответов</string>
+    <string name="plug_discussionTheme">Тема обсуждения</string>
+    <string name="plug_userNickname">Никнейм пользователя</string>
+    <string name="plug_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget amet et varius sed tristique mauris. Nisl sit a tellus risus platea lacus quis lacus. Enim nunc risus, et fermentum amet, scelerisque lectus. Erat morbi ut dolor consequat. Molestie blandit consectetur a quam ac maecenas adipiscing sapien. Lacinia blandit pretium.</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grayBackgroundLight"
+    tools:context=".ui.elements.buttons.DiscussionMessageFragment">
+
+    <TextView
+        android:id="@+id/textView_fragment_forum_discussion_messageAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/plug_discussionTheme"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"
+        android:textStyle="bold"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/textView_fragment_forum_discussion_userMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_fragment_forum_discussion_messageAuthor"
+        android:layout_margin="10dp"
+        android:text="@string/plug_text"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"
+        android:textSize="18sp"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pages.exchange.ExchangeFindBooksFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragmentBackgroundLight"/>
+
+    <LinearLayout
+        android:id="@+id/layout_fragment_exchange_findBooks_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/subtitle_findAnnouncements"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/rubik"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_fragment_forum_createClub"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/button"
+            android:text="@string/buttons_createAnnouncement"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rubik"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_fragment_exchange_findBooks_buttons"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+        <LinearLayout
+            android:id="@+id/layout_fragment_books_findBooks_findBooksButtons"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

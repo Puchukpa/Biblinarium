@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loadScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicBackground"
+    tools:context=".activities.LoadScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/view_titleTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/textView_titleText"
+            android:layout_alignBottom="@+id/textView_titleText"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/fragmentBackground" />
+        <TextView
+            android:id="@+id/textView_titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik"
+            android:layout_marginTop="300dp"/>
+
+        <View
+            android:id="@+id/view_subtitleTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/textView_subtitleText"
+            android:layout_marginTop="-10dp"
+            android:layout_alignBottom="@+id/textView_subtitleText"
+            android:layout_marginBottom="-10dp"
+            android:background="@color/fragmentBackground" />
+        <TextView
+            android:id="@+id/textView_subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_loadScreen"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/view_titleTextBox"/>
+
+        <ProgressBar
+            android:id="@+id/widget_progressBarSpin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="175dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

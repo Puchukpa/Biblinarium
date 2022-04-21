@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_books">
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="com.project.biblinarium.ui.pages.books.BooksFragment"
+        android:label="@string/title_books"
+        tools:layout="@layout/fragment_books" />
+
+    <fragment
+        android:id="@+id/nav_forum"
+        android:name="com.project.biblinarium.ui.pages.forum.ForumFragment"
+        android:label="@string/title_forum"
+        tools:layout="@layout/fragment_forum" />
+
+    <fragment
+        android:id="@+id/nav_exchange"
+        android:name="com.project.biblinarium.ui.pages.exchange.ExchangeFragment"
+        android:label="@string/title_exchange"
+        tools:layout="@layout/fragment_exchange" />
+
+    <fragment
+        android:id="@+id/nav_reserve"
+        android:name="com.project.biblinarium.ui.pages.reserve.ReserveFragment"
+        android:label="@string/title_reserve"
+        tools:layout="@layout/fragment_reserve" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.project.biblinarium.ui.pages.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
