@@ -70,7 +70,9 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_login"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"
+                    android:inputType="text" />
             </FrameLayout>
 
             <!-- Enter password -->
@@ -99,7 +101,9 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_password"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword" />
             </FrameLayout>
 
             <!-- Login button -->
@@ -111,6 +115,7 @@
                 android:layout_marginTop="15dp"
                 android:background="@color/fragmentBackground" />
             <Button
+                android:id="@+id/button_authorization_logIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout_authorization_enterPassword"
