@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="15dp"
     android:background="@color/grayBackground"
-    tools:context=".ui.elements.buttons.DiscussionButtonFragment">
+    tools:context=".mvvm.views.ui.elements.buttons.DiscussionButtonFragment">
 
     <TextView
         android:id="@+id/textView_element_forum_discussionTheme"

@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Biblinarium">
         <activity
-            android:name=".activities.RegistrationActivity"
+            android:name=".mvvm.views.activities.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.BookActivity"
+            android:name=".mvvm.views.activities.BookActivity"
             android:exported="false" />
         <activity
-            android:name=".mvvm.views.LoginActivity"
+            android:name=".mvvm.views.activities.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,11 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.LoadScreen"
+            android:name=".mvvm.views.activities.LoadScreen"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
-            android:exported="false" />
+            android:name=".mvvm.views.activities.MainActivity"
+            android:exported="false" >
+
+        </activity>
     </application>
 
 </manifest>

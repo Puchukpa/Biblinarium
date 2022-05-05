@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.pages.forum.ForumFindClubsFragment">
+    tools:context=".mvvm.views.ui.pages.forum.ForumFindClubsFragment">
 
     <LinearLayout
         android:id="@+id/layout_fragment_forum_findClubs_buttons"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:background="@color/grayBackground"
-    tools:context=".ui.elements.buttons.ClubButtonFragment">
+    tools:context=".mvvm.views.ui.elements.buttons.ClubButtonFragment">
 
     <ImageView
         android:id="@+id/imageView_element_buttons_clubImage"

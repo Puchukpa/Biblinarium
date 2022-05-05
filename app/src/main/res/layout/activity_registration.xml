@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/basicBackground"
-    tools:context=".activities.RegistrationActivity">
+    tools:context=".mvvm.views.activities.RegistrationActivity">
 
     <RelativeLayout
         android:id="@+id/activity_registration"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.pages.account.AccountFragment">
+        tools:context=".mvvm.views.ui.pages.account.AccountFragment">
 
         <!-- Header -->
         <View
@@ -177,7 +177,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="15dp"
                 android:background="@color/grayBackground"
-                tools:context=".ui.elements.buttons.BookButtonFragment">
+                tools:context=".mvvm.views.ui.elements.buttons.BookButtonFragment">
 
                 <ImageButton
                     android:id="@+id/imageButton_registration_setProfilePicture"

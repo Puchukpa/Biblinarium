@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.pages.account.AccountReservedBooks">
+    tools:context=".mvvm.views.ui.pages.account.AccountReservedBooks">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

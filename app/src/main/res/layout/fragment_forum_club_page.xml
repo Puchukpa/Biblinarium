@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    tools:context=".ui.pages.forum.ForumClubPageFragment">
+    tools:context=".mvvm.views.ui.pages.forum.ForumClubPageFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

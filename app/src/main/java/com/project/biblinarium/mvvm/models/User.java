@@ -2,6 +2,7 @@ package com.project.biblinarium.mvvm.models;
 
 import androidx.annotation.NonNull;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class User {
@@ -10,6 +11,7 @@ public class User {
     private String login;
     private String nickname;
     private String password;
+    private ArrayList<Book> usersBooks;
 
     public User(int id, @NonNull String login, @NonNull String password, String nickname) {
         this.id = id;
@@ -38,6 +40,10 @@ public class User {
         return nickname;
     }
 
+    public ArrayList<Book> getUsersBooks() {
+        return usersBooks;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -52,5 +58,9 @@ public class User {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public void setUsersBooks(ArrayList<Book> usersBooks) {
+        this.usersBooks = usersBooks;
     }
 }

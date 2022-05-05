@@ -4,7 +4,7 @@
     android:id="@+id/fragment_reserve"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.pages.reserve.ReserveFragment">
+    tools:context=".mvvm.views.ui.pages.reserve.ReserveFragment">
 
 
     <!-- Header -->
@@ -30,7 +30,7 @@
     <!-- Searching panel -->
     <fragment
         android:id="@+id/fragment_reserve_searchingPanel"
-        android:name="com.project.biblinarium.ui.elements.SearchingLineElement"
+        android:name="com.project.biblinarium.mvvm.views.ui.elements.SearchingLineElement"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_below="@+id/view_reserve_header"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/fragment_reserve_searchingPanel"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/fragmentBackgroundLight">
 
     </RelativeLayout>

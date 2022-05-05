@@ -5,7 +5,13 @@
     android:layout_height="100dp"
     android:layout_marginTop="15dp"
     android:background="@color/grayBackground"
-    tools:context=".ui.elements.buttons.BookButtonFragment">
+    tools:context=".mvvm.views.ui.elements.buttons.BookButtonFragment">
+
+    <Button
+        android:id="@+id/button_fragment_books_bookButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"/>
 
     <ImageView
         android:id="@+id/imageView_element_buttons_bookImage"
@@ -13,8 +19,8 @@
         android:layout_height="80dp"
         android:layout_centerVertical="true"
         android:layout_marginStart="15dp"
-        android:src="@drawable/empty_image"
-        android:background="@color/grayForeground"/>
+        android:background="@color/grayForeground"
+        android:src="@drawable/empty_image" />
 
     <LinearLayout
         android:id="@+id/layout_element_buttons_bookText"

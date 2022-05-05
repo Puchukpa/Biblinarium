@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="175dp"
     android:background="@color/grayBackgroundLight"
-    tools:context=".ui.pages.book.BookTextSettingsFragment">
+    tools:context=".mvvm.views.ui.pages.book.BookTextSettingsFragment">
 
     <TextView
         android:id="@+id/textView_fragment_textSettings_subtitleTextSettings"
@@ -69,7 +69,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="10dp"
             android:isScrollContainer="true"
-            android:popupBackground="@color/grayBackground"/>
+            android:popupBackground="@color/grayBackground" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -87,7 +87,7 @@
             android:textSize="16sp"
             android:textStyle="italic" />
         <ToggleButton
-            android:id="@+id/spinner_fragment_textSettings_nightToggleButton"
+            android:id="@+id/toggleButton_fragment_textSettings_nightToggleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"

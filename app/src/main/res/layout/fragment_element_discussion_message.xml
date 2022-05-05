@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/grayBackgroundLight"
-    tools:context=".ui.elements.buttons.DiscussionMessageFragment">
+    tools:context=".mvvm.views.ui.elements.buttons.DiscussionMessageFragment">
 
     <TextView
         android:id="@+id/textView_fragment_forum_discussion_messageAuthor"

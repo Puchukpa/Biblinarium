@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragmentBackgroundLight"
-    tools:context=".ui.pages.forum.ForumCreateClubFragment">
+    tools:context=".mvvm.views.ui.pages.forum.ForumCreateClubFragment">
 
     <TextView
         android:id="@+id/textView_fragment_forum_createClub"

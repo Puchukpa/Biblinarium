@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragmentBackgroundLight"
-    tools:context=".ui.pages.forum.ForumDiscussionPageFragment">
+    tools:context=".mvvm.views.ui.pages.forum.ForumDiscussionPageFragment">
 
     <Button
         android:id="@+id/button_fragment_forum_discussion_back"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragmentBackgroundLight"
-    tools:context=".ui.pages.exchange.ExchangeCreateAnnouncementFragment">
+    tools:context=".mvvm.views.ui.pages.exchange.ExchangeCreateAnnouncementFragment">
 
     <TextView
         android:id="@+id/textView_fragment_exchange_createAnnouncement"

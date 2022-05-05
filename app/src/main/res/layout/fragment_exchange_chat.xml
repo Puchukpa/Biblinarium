@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragmentBackgroundLight"
-    tools:context=".ui.pages.exchange.ExchangeChatFragment">
+    tools:context=".mvvm.views.ui.pages.exchange.ExchangeChatFragment">
 
     <Button
         android:id="@+id/button_fragment_exchange_chat_backButton"

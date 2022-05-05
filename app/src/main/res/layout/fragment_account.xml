@@ -4,7 +4,7 @@
     android:id="@+id/fragment_account"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.pages.account.AccountFragment">
+    tools:context=".mvvm.views.ui.pages.account.AccountFragment">
 
     <!-- Header -->
     <View
@@ -34,7 +34,7 @@
         android:layout_below="@+id/view_account_header"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/fragmentBackgroundLight">
 
     </RelativeLayout>

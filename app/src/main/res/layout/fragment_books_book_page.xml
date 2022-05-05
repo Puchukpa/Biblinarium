@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    tools:context=".ui.pages.books.BooksBookPageFragment">
+    tools:context=".mvvm.views.ui.pages.books.BooksBookPageFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,8 +24,8 @@
             android:id="@+id/floatingActionButton_fragment_books_bookPage_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:src="@drawable/ic_arrow_left" />
 
@@ -33,18 +33,18 @@
             android:id="@+id/textView_fragment_books_bookName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/imageView_fragment_books_bookImage"
-            android:text="@string/bookName"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="5dp"
             android:fontFamily="@font/rubik"
-            android:textSize="28sp" />
+            android:text="@string/bookName"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView_fragment_books_booksAuthor"
+            android:id="@+id/textView_fragment_books_bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="5dp"
@@ -62,7 +62,7 @@
             android:id="@+id/floatingActionButton_fragment_books_bookPage_findAnnouncement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_fragment_books_booksAuthor"
+            android:layout_below="@+id/textView_fragment_books_bookAuthor"
             android:layout_toStartOf="@+id/floatingActionButton_fragment_books_bookPage_reserve"
             android:layout_marginVertical="5dp"
             android:scaleX="0.7"
@@ -74,7 +74,7 @@
             android:id="@+id/floatingActionButton_fragment_books_bookPage_reserve"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_fragment_books_booksAuthor"
+            android:layout_below="@+id/textView_fragment_books_bookAuthor"
             android:layout_toStartOf="@+id/floatingActionButton_fragment_books_bookPage_download"
             android:layout_marginVertical="5dp"
             android:scaleX="0.7"
@@ -86,7 +86,7 @@
             android:id="@+id/floatingActionButton_fragment_books_bookPage_download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_fragment_books_booksAuthor"
+            android:layout_below="@+id/textView_fragment_books_bookAuthor"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="10dp"
             android:layout_marginVertical="5dp"
