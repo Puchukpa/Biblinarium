@@ -5,11 +5,19 @@
     android:layout_height="match_parent"
     tools:context=".mvvm.views.ui.pages.forum.ForumFindClubsFragment">
 
+    <FrameLayout
+        android:id="@+id/fragment_forum_findClubs_searchingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </FrameLayout>
+
     <LinearLayout
         android:id="@+id/layout_fragment_forum_findClubs_buttons"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_below="@+id/fragment_forum_findClubs_searchingPanel">
 
         <Button
             android:id="@+id/button_fragment_forum_findClubs_myClubs"
@@ -17,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/basicBackground"
-            android:text="@string/button_myBooks"
+            android:text="@string/button_myClubs"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:fontFamily="@font/rubik"
@@ -29,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/fragmentBackgroundLight"
-            android:text="@string/button_findBooks"
+            android:text="@string/button_findClubs"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:textStyle="bold"
@@ -50,11 +58,12 @@
         android:layout_below="@+id/layout_fragment_forum_findClubs_buttons"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp">
+
         <LinearLayout
             android:id="@+id/layout_fragment_forum_findClubs_findClubsButtons"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         </LinearLayout>
     </ScrollView>

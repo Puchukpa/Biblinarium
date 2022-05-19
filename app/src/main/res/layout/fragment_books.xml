@@ -27,25 +27,14 @@
         android:textStyle="bold" />
 
 
-    <!-- Searching panel -->
-    <FrameLayout
-        android:id="@+id/fragment_books_searchingPanel"
-        android:name="com.project.biblinarium.mvvm.views.ui.elements.SearchingLineElement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/view_books_header"
-        android:layout_marginTop="15dp" >
-
-    </FrameLayout>
-
-
     <!-- Main panel -->
     <RelativeLayout
         android:id="@+id/layout_books_mainPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/fragment_books_searchingPanel"
+        android:layout_below="@+id/view_books_header"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:background="@color/fragmentBackgroundLight">
 

@@ -4,19 +4,37 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/activity_book.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/activity_registration.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_account.xml" value="0.425" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_account_settings.xml" value="0.3078125" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_account_user_page.xml" value="0.3078125" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_blank.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_book_text_settings.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_books.xml" value="0.2066869300911854" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_books_book_page.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_books_find_books.xml" value="0.1935185185185185" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_books_my_books.xml" value="0.16869300911854104" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_button_announcement_button.xml" value="0.425" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_button_book_button.xml" value="0.23867753623188406" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_button_club_button.xml" value="0.2" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_discussion_button.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_discussion_message.xml" value="0.2066869300911854" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_element_searching_line.xml" value="0.24954710144927536" />
-        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_exchange.xml" value="0.425" />
-        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum.xml" value="0.425" />
-        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_reserve.xml" value="0.425" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_exchange.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_exchange_announcement_page.xml" value="0.24456521739130435" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_exchange_create_announcement.xml" value="0.3078125" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_exchange_find_books.xml" value="0.3078125" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_club_page.xml" value="0.21557971014492755" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_create_club.xml" value="0.3078125" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_create_discussion.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_discussion_page.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_find_clubs.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_forum_my_clubs.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_reserve.xml" value="0.264" />
+        <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/fragment_reserve_find_books.xml" value="0.2912621359223301" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/list_element.xml" value="0.2066869300911854" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/layout/list_layout.xml" value="0.3078125" />
         <entry key="..\:/Users/PUCH_USER/AndroidStudioProjects/Biblinarium/app/src/main/res/menu/bottom_nav_menu.xml" value="0.346875" />

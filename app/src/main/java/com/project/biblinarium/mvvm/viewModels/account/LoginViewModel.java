@@ -1,4 +1,4 @@
-package com.project.biblinarium.mvvm.viewModels;
+package com.project.biblinarium.mvvm.viewModels.account;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -6,8 +6,6 @@ import androidx.lifecycle.ViewModel;
 import com.project.biblinarium.mvvm.repositories.UserRepository;
 
 public class LoginViewModel extends ViewModel {
-
-    private final UserRepository userRepo = new UserRepository();
 
     private final MutableLiveData<String> login = new MutableLiveData<>();
     private final MutableLiveData<String> password = new MutableLiveData<>();
@@ -26,10 +24,10 @@ public class LoginViewModel extends ViewModel {
     }
 
     public String getUserNickname() {
-        return userRepo.getCurrentUser().getNickname();
+        return UserRepository.getCurrentUser().getNickname();
     }
 
     public void authorize (String login, String password) {
-        this.access.setValue(userRepo.setCurrentUser(login, password));
+        this.access.setValue(UserRepository.setCurrentUser(login, password));
     }
 }

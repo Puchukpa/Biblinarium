@@ -69,7 +69,8 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_setLogin"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"/>
             </FrameLayout>
 
             <!-- Set password -->
@@ -98,7 +99,8 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_setPassword"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"/>
             </FrameLayout>
 
             <!-- Repeat password -->
@@ -127,7 +129,8 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_repeatPassword"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"/>
             </FrameLayout>
 
             <!-- Set nickname -->
@@ -157,7 +160,8 @@
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
                     android:hint="@string/hint_setNickname"
-                    android:textColorHint="@color/grayForeground" />
+                    android:textColorHint="@color/grayForeground"
+                    android:textColor="@color/black"/>
             </FrameLayout>
 
             <View

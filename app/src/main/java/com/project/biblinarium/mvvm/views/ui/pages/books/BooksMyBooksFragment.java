@@ -9,14 +9,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.biblinarium.R;
-import com.project.biblinarium.mvvm.viewModels.BooksMyBooksViewModel;
+import com.project.biblinarium.mvvm.viewModels.books.BooksMyBooksViewModel;
+import com.project.biblinarium.mvvm.views.ui.elements.SearchingLineElement;
 import com.project.biblinarium.mvvm.views.ui.elements.buttons.BookButtonFragment;
 
 public class BooksMyBooksFragment extends Fragment {
 
     Button findBooksButton;
+    EditText searchingLineQuery;
+    FloatingActionButton findButton;
 
     BooksMyBooksViewModel myBooksViewModel;
 
@@ -27,10 +32,12 @@ public class BooksMyBooksFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_books_my_books, container, false);
 
         findBooksButton = view.findViewById(R.id.button_fragment_books_myBooks_findBooks);
+        searchingLineQuery = view.findViewById(R.id.editText_searchingLine);
+        findButton = view.findViewById(R.id.floatingActionButton_searchingFind);
 
         myBooksViewModel = new ViewModelProvider(this).get(BooksMyBooksViewModel.class);
 
-        Bundle[] booksBundles = myBooksViewModel.getBooksBundles();
+        Bundle[] booksBundles = myBooksViewModel.getBooksBundles(searchingLineQuery.getText().toString());
         for (Bundle bundle : booksBundles) {
             getChildFragmentManager()
                     .beginTransaction()

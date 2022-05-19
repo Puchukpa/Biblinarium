@@ -1,4 +1,4 @@
-package com.project.biblinarium.mvvm.viewModels;
+package com.project.biblinarium.mvvm.viewModels.book;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;

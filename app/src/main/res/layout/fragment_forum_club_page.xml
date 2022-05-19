@@ -1,115 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grayBackgroundLight"
     android:layout_margin="10dp"
     tools:context=".mvvm.views.ui.pages.forum.ForumClubPageFragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_fragment_forum_clubPage_back"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/grayBackgroundLight">
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:src="@drawable/ic_arrow_left" />
 
-        <ImageView
-            android:id="@+id/imageView_fragment_forum_clubImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/empty_image"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_forum_clubPage_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:clickable="true"
-            android:src="@drawable/ic_arrow_left" />
-
-        <TextView
-            android:id="@+id/textView_fragment_forum_clubName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/imageView_fragment_forum_clubImage"
-            android:text="@string/clubName"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:fontFamily="@font/rubik"
-            android:textSize="28sp" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_forum_subscribe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_fragment_forum_clubName"
-            android:layout_toStartOf="@+id/floatingActionButton_fragment_forum_share"
-            android:layout_marginVertical="5dp"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
-            android:clickable="true"
-            android:src="@drawable/ic_plus" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_forum_share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_fragment_forum_clubName"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginVertical="5dp"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
-            android:clickable="true"
-            android:src="@drawable/ic_share" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_fragment_forum_createDiscussion">
 
         <RelativeLayout
-            android:id="@+id/layout_fragment_forum_themesAndDescription"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="5dp"
-            android:layout_below="@+id/floatingActionButton_fragment_forum_share"
-            android:background="@color/grayBackground">
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView_fragment_forum_clubImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/empty_image"/>
 
             <TextView
-                android:id="@+id/textView_fragment_forum_clubPage_clubTheme"
+                android:id="@+id/textView_fragment_forum_clubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_fragment_forum_clubImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/clubName"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton_fragment_forum_subscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_fragment_forum_clubName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/ic_plus" />
+
+            <RelativeLayout
+                android:id="@+id/layout_fragment_forum_themesAndDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="@string/clubTheme"
-                android:textColor="@color/black"
-                android:textAllCaps="false"
-                android:fontFamily="@font/rubik"
-                android:textSize="16sp" />
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@+id/floatingActionButton_fragment_forum_subscribe"
+                android:background="@color/grayBackground">
 
-            <TextView
-                android:id="@+id/textView_fragment_forum_clubPage_clubDescription"
+                <TextView
+                    android:id="@+id/textView_fragment_forum_clubPage_clubTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/clubTheme"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView_fragment_forum_clubPage_clubDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_below="@id/textView_fragment_forum_clubPage_clubTheme"
+                    android:text="@string/hint_clubDescription"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/rubik"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fragment_forum_discussions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_below="@id/textView_fragment_forum_clubPage_clubTheme"
-                android:text="@string/hint_clubDescription"
-                android:textColor="@color/black"
-                android:textAllCaps="false"
-                android:fontFamily="@font/rubik"
-                android:textSize="16sp" />
+                android:layout_below="@+id/layout_fragment_forum_themesAndDescription"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical">
 
+            </LinearLayout>
         </RelativeLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/layout_fragment_forum_discussions"
-            android:orientation="vertical"
-            android:layout_below="@+id/layout_fragment_forum_themesAndDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="10dp">
-
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/button_fragment_forum_createDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/button"
+        android:fontFamily="@font/rubik"
+        android:text="Создать обсуждение"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+</RelativeLayout>

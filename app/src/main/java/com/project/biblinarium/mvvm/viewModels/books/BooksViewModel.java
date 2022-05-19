@@ -1,4 +1,4 @@
-package com.project.biblinarium.mvvm.viewModels;
+package com.project.biblinarium.mvvm.viewModels.books;
 
 import androidx.lifecycle.ViewModel;
 

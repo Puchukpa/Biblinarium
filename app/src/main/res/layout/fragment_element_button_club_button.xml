@@ -3,8 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
+    android:layout_marginTop="15dp"
     android:background="@color/grayBackground"
     tools:context=".mvvm.views.ui.elements.buttons.ClubButtonFragment">
+
+    <Button
+        android:id="@+id/button_fragment_forum_clubButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"/>
 
     <ImageView
         android:id="@+id/imageView_element_buttons_clubImage"
@@ -12,8 +19,8 @@
         android:layout_height="80dp"
         android:layout_centerVertical="true"
         android:layout_marginStart="15dp"
-        android:src="@drawable/empty_image"
-        android:background="@color/grayForeground"/>
+        android:background="@color/grayForeground"
+        android:src="@drawable/empty_image" />
 
     <LinearLayout
         android:id="@+id/layout_element_buttons_clubText"
@@ -38,7 +45,7 @@
             android:fontFamily="@font/rubik"/>
 
         <TextView
-            android:id="@+id/textView_element_buttons_clubAuthor"
+            android:id="@+id/textView_element_buttons_clubTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/clubTheme"
@@ -49,7 +56,7 @@
             android:fontFamily="@font/rubik"/>
 
         <TextView
-            android:id="@+id/textView_element_buttons_clubSize"
+            android:id="@+id/textView_element_buttons_clubMembers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/clubSize"

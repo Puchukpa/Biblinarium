@@ -1,13 +1,11 @@
 package com.project.biblinarium.mvvm.views.ui.elements.buttons;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.project.biblinarium.R;
-import com.project.biblinarium.mvvm.viewModels.BooksBookButtonViewModel;
-import com.project.biblinarium.mvvm.viewModels.BooksBookPageViewModel;
+import com.project.biblinarium.mvvm.viewModels.books.BooksBookButtonViewModel;
 import com.project.biblinarium.mvvm.views.activities.BookActivity;
 import com.project.biblinarium.mvvm.views.ui.pages.books.BooksBookPageFragment;
 import com.project.biblinarium.mvvm.views.ui.pages.books.BooksFragment;
@@ -59,7 +56,6 @@ public class BookButtonFragment extends Fragment{
                         .getChildFragmentManager()
                         .beginTransaction()
                         .replace(R.id.layout_books_mainPanel, BooksBookPageFragment.class, bundle)
-                        .hide(parentFragment.searchingLine)
                         .commit();
             } else {
                 Intent intent = new Intent(getContext(), BookActivity.class);

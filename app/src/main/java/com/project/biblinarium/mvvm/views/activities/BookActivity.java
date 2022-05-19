@@ -3,17 +3,12 @@ package com.project.biblinarium.mvvm.views.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.project.biblinarium.R;
-import com.project.biblinarium.mvvm.models.Book;
-import com.project.biblinarium.mvvm.repositories.BooksRepository;
-import com.project.biblinarium.mvvm.repositories.UserRepository;
-import com.project.biblinarium.mvvm.viewModels.BookViewModel;
+import com.project.biblinarium.mvvm.viewModels.book.BookViewModel;
 import com.project.biblinarium.mvvm.views.ui.pages.book.BookTextSettingsFragment;
 
 public class BookActivity extends AppCompatActivity {

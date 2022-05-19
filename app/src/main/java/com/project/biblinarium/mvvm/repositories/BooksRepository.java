@@ -11,6 +11,7 @@ import java.util.HashMap;
 public class BooksRepository {
 
     private final HashMap<String, Book> allBooks = new HashMap<>();
+    private int lastUSedId = 5;
 
     public BooksRepository () {
         String[] text = {

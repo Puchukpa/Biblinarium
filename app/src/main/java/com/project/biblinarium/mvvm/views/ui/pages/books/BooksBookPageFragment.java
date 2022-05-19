@@ -9,11 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.biblinarium.R;
-import com.project.biblinarium.mvvm.viewModels.BooksBookPageViewModel;
+import com.project.biblinarium.mvvm.viewModels.books.BooksBookPageViewModel;
 
 public class BooksBookPageFragment extends Fragment {
 
@@ -55,7 +54,6 @@ public class BooksBookPageFragment extends Fragment {
             parentFragment.getChildFragmentManager()
                     .beginTransaction()
                     .replace(R.id.layout_books_mainPanel, parentFragment.findBooksFragment)
-                    .show(parentFragment.searchingLine)
                     .commit();
         });
 

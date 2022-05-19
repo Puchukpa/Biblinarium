@@ -12,10 +12,31 @@ import com.project.biblinarium.R;
 
 public class ForumFragment extends Fragment {
 
+    ForumMyClubsFragment myClubsFragment;
+    ForumFindClubsFragment findClubsFragment;
+    ForumDiscussionPageFragment discussionPageFragment;
+    ForumClubPageFragment clubPageFragment;
+    ForumCreateClubFragment createClubFragment;
+    ForumCreateDiscussionFragment createDiscussionFragment;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_forum, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_forum, container, false);
+
+        myClubsFragment = new ForumMyClubsFragment();
+        findClubsFragment = new ForumFindClubsFragment();
+        discussionPageFragment = new ForumDiscussionPageFragment();
+        clubPageFragment = new ForumClubPageFragment();
+        createClubFragment = new ForumCreateClubFragment();
+        createDiscussionFragment = new ForumCreateDiscussionFragment();
+
+        getChildFragmentManager()
+                .beginTransaction()
+                .add(R.id.layout_forum_mainPanel, myClubsFragment)
+                .commit();
+
+        return view;
     }
 }

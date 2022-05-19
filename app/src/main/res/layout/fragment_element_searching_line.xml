@@ -16,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:layout_toStartOf="@+id/floatingActionButton_searchingFilter">
+        android:layout_toStartOf="@+id/floatingActionButton_searchingFind">
 
         <View
             android:layout_width="wrap_content"
@@ -40,14 +40,13 @@
     </RelativeLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton_searchingFilter"
+        android:id="@+id/floatingActionButton_searchingFind"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="15dp"
-        android:src="@drawable/ic_filter"
-        android:scaleX="1"
-        android:scaleY="1"/>
+        android:clickable="true"
+        android:src="@drawable/ic_filter" />
 
 </RelativeLayout>

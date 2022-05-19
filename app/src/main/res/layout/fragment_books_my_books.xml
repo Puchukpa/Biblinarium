@@ -5,11 +5,63 @@
     android:layout_height="match_parent"
     tools:context=".mvvm.views.ui.pages.books.BooksMyBooksFragment">
 
+    <RelativeLayout
+        android:id="@+id/fragment_element_searchingLine"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/fragmentBackground"
+        tools:context=".mvvm.views.ui.elements.SearchingLineElement">
+
+        <RelativeLayout
+            android:id="@+id/layout_searchingLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toStartOf="@+id/floatingActionButton_searchingFind">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editText_searchingLine"
+                android:layout_alignTop="@+id/editText_searchingLine"
+                android:layout_alignEnd="@+id/editText_searchingLine"
+                android:layout_alignBottom="@+id/editText_searchingLine"
+                android:background="@drawable/elem_panel_gray_square" />
+
+            <EditText
+                android:id="@+id/editText_searchingLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/rubik"
+                android:hint="@string/hint_searchingLine"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grayForeground" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_searchingFind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:clickable="true"
+            android:src="@drawable/ic_filter" />
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/layout_fragment_books_myBooks_buttons"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_below="@+id/fragment_element_searchingLine">
 
         <Button
             android:id="@+id/button_fragment_books_myBooks_myBooks"

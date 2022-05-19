@@ -107,23 +107,37 @@
             </FrameLayout>
 
             <!-- Login button -->
-            <View
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_below="@+id/layout_authorization_enterPassword"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:background="@color/fragmentBackground" />
-            <Button
-                android:id="@+id/button_authorization_logIn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/layout_authorization_enterPassword"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25sp"
-                android:background="@color/button"
-                android:text="@string/buttons_logIn"
-                android:textColor="@color/black" />
+                android:background="@color/fragmentBackground" >
+
+                <Button
+                    android:id="@+id/button_authorization_logIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginVertical="15dp"
+                    android:background="@color/button"
+                    android:text="@string/buttons_logIn"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/button_authorization_SingUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@color/button"
+                    android:text="@string/buttons_doneRegistration"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
             </RelativeLayout>
         </RelativeLayout>
 

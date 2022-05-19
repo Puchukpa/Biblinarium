@@ -18,7 +18,6 @@ import com.project.biblinarium.mvvm.viewModels.SearchingLineViewModel;
 public class SearchingLineElement extends Fragment {
 
     EditText searchingLine;
-    FloatingActionButton filter;
 
     SearchingLineViewModel searchingLineViewModel;
 
@@ -30,7 +29,6 @@ public class SearchingLineElement extends Fragment {
         searchingLineViewModel = new ViewModelProvider(this).get(SearchingLineViewModel.class);
 
         searchingLine = (EditText) view.findViewById(R.id.editText_searchingLine);
-        filter = (FloatingActionButton) view.findViewById(R.id.floatingActionButton_searchingFilter);
 
         return view;
     }

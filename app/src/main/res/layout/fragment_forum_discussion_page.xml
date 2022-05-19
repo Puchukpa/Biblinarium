@@ -14,7 +14,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/button"
         android:text="Назад"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,6 +23,7 @@
         android:layout_above="@+id/layout_fragment_forum_discussion_sendBox">
 
         <RelativeLayout
+            android:id="@+id/layout_fragment_forum_discussion_otherMessages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
@@ -37,43 +38,44 @@
                     android:id="@+id/textView_fragment_forum_discussion_discussionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/rubik"
                     android:text="@string/plug_discussionTheme"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/rubik"
-                    android:textStyle="bold"
-                    android:textSize="26sp"/>
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView_fragment_forum_discussion_userNickname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textView_fragment_forum_discussion_discussionTheme"
-                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/rubik"
                     android:text="@string/plug_userNickname"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/rubik"
-                    android:textStyle="italic"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
 
                 <TextView
                     android:id="@+id/textView_fragment_forum_discussion_message"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textView_fragment_forum_discussion_userNickname"
-                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/rubik"
                     android:text="@string/plug_text"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/rubik"
-                    android:textSize="18sp"/>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/layout_fragment_forum_discussion_otherMessages"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/layout_fragment_forum_discussion_firstMessage">
-
+                    android:textSize="18sp" />
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
@@ -99,8 +101,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_toStartOf="@+id/floatingActionButton_fragment_forum_discussion_sendButton"
             android:layout_marginHorizontal="15dp"
+            android:layout_toStartOf="@+id/floatingActionButton_fragment_forum_discussion_sendButton"
             android:hint="@string/hint_discussionMessage"
             android:textColorHint="@color/grayForeground" />
 

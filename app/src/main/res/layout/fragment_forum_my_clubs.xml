@@ -5,11 +5,19 @@
     android:layout_height="match_parent"
     tools:context=".mvvm.views.ui.pages.forum.ForumMyClubsFragment">
 
+    <FrameLayout
+        android:id="@+id/fragment_forum_myClubs_searchingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </FrameLayout>
+
     <LinearLayout
         android:id="@+id/layout_fragment_forum_myClubs_buttons"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_below="@id/fragment_forum_myClubs_searchingPanel">
 
         <Button
             android:id="@+id/button_fragment_forum_myClubs_myClubs"
@@ -17,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/fragmentBackgroundLight"
-            android:text="@string/button_myBooks"
+            android:text="@string/button_myClubs"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textAllCaps="false"
@@ -31,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/basicBackground"
-            android:text="@string/button_findBooks"
+            android:text="@string/button_findClubs"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:fontFamily="@font/rubik"
@@ -50,13 +58,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout_fragment_forum_myClubs_buttons"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="220dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginStart="220dp"
         android:background="@color/button"
+        android:fontFamily="@font/rubik"
         android:text="@string/buttons_createClub"
-        android:textColor="@color/black"
-        android:fontFamily="@font/rubik"/>
+        android:textColor="@color/black" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -64,11 +72,12 @@
         android:layout_below="@+id/button_fragment_forum_createClub"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp">
+
         <LinearLayout
-            android:id="@+id/layout_fragment_books_findBooks_findBooksButtons"
-            android:orientation="vertical"
+            android:id="@+id/layout_fragment_forum_myClubs_myClubsButtons"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         </LinearLayout>
     </ScrollView>

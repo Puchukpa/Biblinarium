@@ -13,9 +13,8 @@ import android.widget.Spinner;
 import android.widget.ToggleButton;
 
 import com.project.biblinarium.R;
-import com.project.biblinarium.mvvm.models.Book;
-import com.project.biblinarium.mvvm.viewModels.BookTextSettingsViewModel;
-import com.project.biblinarium.mvvm.viewModels.BookViewModel;
+import com.project.biblinarium.mvvm.viewModels.book.BookTextSettingsViewModel;
+import com.project.biblinarium.mvvm.viewModels.book.BookViewModel;
 import com.project.biblinarium.mvvm.views.activities.BookActivity;
 
 public class BookTextSettingsFragment extends Fragment {

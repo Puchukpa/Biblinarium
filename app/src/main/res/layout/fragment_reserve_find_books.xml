@@ -7,106 +7,128 @@
     android:background="@color/fragmentBackgroundLight"
     tools:context=".mvvm.views.ui.pages.reserve.ReserveFindBooksFragment">
 
-    <TextView
-        android:id="@+id/textView_fragment_reserve_findLibraries"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginVertical="10dp"
-        android:layout_gravity="center"
-        android:text="@string/subtitle_findLibraries"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:fontFamily="@font/rubik"
-        android:textSize="18sp" />
+    <FrameLayout
+        android:id="@+id/layout_fragment_reserve_findBooks_searchingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </FrameLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_fragment_reserve_map"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_below="@+id/textView_fragment_reserve_findLibraries"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/grayBackgroundLight">
-        
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_reserve_map_plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/floatingActionButton_fragment_reserve_map_minus"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:src="@drawable/ic_plus" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_reserve_map_minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/floatingActionButton_fragment_reserve_map_flag"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:src="@drawable/is_minus" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton_fragment_reserve_map_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:src="@drawable/ic_arrow_flag" />
-
-
-    </RelativeLayout>
-    
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true" >
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/grayBackgroundLight" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_fragment_reserve_findBooks_searchingPanel">
 
         <TextView
-            android:id="@+id/textView_fragment_reserve_libraryName"
-            android:layout_width="match_parent"
+            android:id="@+id/textView_fragment_reserve_findLibraries"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:text="@string/plug_libraryName"
+            android:layout_marginStart="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:text="@string/subtitle_findLibraries"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textStyle="bold"
+            android:textAllCaps="false"
             android:fontFamily="@font/rubik"
-            android:textSize="20sp"/>
+            android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView_fragment_reserve_libraryAddress"
+        <RelativeLayout
+            android:id="@+id/layout_fragment_reserve_map"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:layout_below="@id/textView_fragment_reserve_libraryName"
-            android:text="@string/plug_libraryAddress"
-            android:textColor="@color/black"
-            android:textStyle="italic"
-            android:fontFamily="@font/rubik"
-            android:textSize="16sp"/>
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_fragment_reserve_findBooks_chooseLibrary"
+            android:layout_below="@+id/textView_fragment_reserve_findLibraries"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="15dp"
+            android:background="@color/grayBackgroundLight">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton_fragment_reserve_map_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/floatingActionButton_fragment_reserve_map_minus"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_plus" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton_fragment_reserve_map_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/floatingActionButton_fragment_reserve_map_flag"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:src="@drawable/is_minus" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton_fragment_reserve_map_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_arrow_flag" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fragment_reserve_findBooks_chooseLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/button_fragment_reserve_findBooks_chooseLibrary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grayBackgroundLight" />
+
+            <TextView
+                android:id="@+id/textView_fragment_reserve_libraryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/plug_libraryName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/rubik"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView_fragment_reserve_libraryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@id/textView_fragment_reserve_libraryName"
+                android:text="@string/plug_libraryAddress"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:fontFamily="@font/rubik"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </RelativeLayout>
