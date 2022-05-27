@@ -18,6 +18,11 @@ public class ClubsRepository {
         allClubs.put("Club3", new Club(3, "Club3", "Theme3", "Description3"));
         allClubs.put("Club4", new Club(4, "Club4", "Theme4", "Description4"));
         allClubs.put("Club5", new Club(5, "Club5", "Theme5", "Description5"));
+        allClubs.get("Club1").setMembers(2);
+        allClubs.get("Club2").setMembers(2);
+        allClubs.get("Club3").setMembers(2);
+        allClubs.get("Club4").setMembers(2);
+        allClubs.get("Club5").setMembers(2);
     }
 
     public HashMap<String, Club> getAllClubs() {

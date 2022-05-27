@@ -48,7 +48,7 @@ public class ClubButtonFragment extends Fragment {
 
         clubName.setText(clubButtonViewModel.getClubName());
         clubTheme.setText(clubButtonViewModel.getClubTheme());
-        clubMembers.setText(clubButtonViewModel.getClubMembers());
+        clubMembers.setText("Members: " + clubButtonViewModel.getClubMembers());
 
         clubButton.setOnClickListener(v -> {
             Bundle bundle = clubButtonViewModel.getBundle();

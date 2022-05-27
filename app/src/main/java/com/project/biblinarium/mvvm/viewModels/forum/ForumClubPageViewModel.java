@@ -73,6 +73,7 @@ public class ForumClubPageViewModel extends ViewModel {
             }
         }
 
+        club.setMembers(club.getMembers() + 1);
         UserRepository.getCurrentUser().getUsersClubs().add(club);
     }
 }
